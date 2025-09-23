@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.nav a {
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 12px 20px; /* Espaciado interno para hacerlo parecer un botón */
+    border-radius: 6px; /* Bordes redondeados */
+    background-color: #8391d1; /* Color de fondo rojo */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    display: inline-block; /* Asegura que el padding y otras propiedades de bloque funcionen */
+}
+
+    .nav a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px); /* Eleva ligeramente el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto elevado */
+    }   
+
+
+.contenedor-tarjetas {
+    text-align: center; /* Centra las tarjetas (que son inline-block) */
+    width: 100%;
+    margin: 0 auto 50px;
+    background-color: rgba(41, 40, 40, 0.212);
+    padding: 10px; /* Reducido para compensar el margen de las tarjetas */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.tarjeta {
+    background-color: #f4f4f4c5;
+    color: #333333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    margin: 10px; /* Espacio entre tarjetas */
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 320px;
+    position: relative; /* Requerido para posicionar el botón */
+    min-height: 480px; /* Altura mínima para alinear botones */
+    text-align: left; /* Restablece la alineación del texto para el contenido de la tarjeta */
+}
+
+/* Estilos de la imagen */
+.imagen-tarjeta {
+    width: 100%;
+    height: 180px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Recorta la imagen para que encaje sin deformarse */
+    transition: transform 0.3s ease;
+}
+
+/* Contenido de la tarjeta */
+.contenido-tarjeta {
+    padding: 1.25em; /* 20px */
+    padding-bottom: 5em; /* Espacio reservado para el botón posicionado absolutamente */
+}
+
+/* Título de la tarjeta */
+.titulo-tarjeta {
+    font-size: 1.4rem;
+    margin-bottom: 0.54em; /* Cambiado de 12px */
+    font-weight: bold;
+}
+
+/* Descripción de la tarjeta */
+.descripcion-tarjeta {
+    line-height: 1.6;
+    margin-bottom: 1.26em; /* Cambiado de 20px */
+    font-size: 0.99rem;
+}
+
+/* ===== BOTÓN ===== */
+
+/* Botón de la tarjeta */
+.boton-tarjeta {
+    background-color: #77f57d; /* Color de fondo rojo hexadecimal */
+    color: #ffffff; /* Color de texto blanco hexadecimal */
+    border: none;
+    padding: 0.86em 1.71em; /* Cambiado de 12px 24px */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    /* Posicionamiento absoluto en la parte inferior */
+    position: absolute;
+    bottom: 1.25em; /* 20px */
+    left: 1.25em;   /* 20px */
+    width: calc(100% - 2.5em); /* Ancho total menos el padding lateral */
+}
+
+/* ===== GALERÍA DE IMÁGENES ===== */
+
+.galeria-contenedor {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.galeria-titulo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.galeria-imagen {
+    flex: 1 1 300px; /* Clave para el ajuste: Crece y se encoge desde una base de 300px */
+    max-width: 100%; /* Previene que la imagen se desborde */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
