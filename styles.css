@@ -160,3 +160,257 @@
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+
+/* --- FORMULARIO --- */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto; /* Centra el formulario en la página */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para que el padding no altere el ancho */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- LISTA DE TAREAS --- */
+.task-list-container {
+    max-width: 600px;
+    margin: 40px auto; /* Centra el contenedor en la página */
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-list-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.task-list {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Apila los ítems verticalmente */
+    align-items: center; /* Centra los ítems horizontalmente */
+    gap: 15px; /* Crea un espacio uniforme de 15px entre cada ítem */
+}
+
+.task-list li {
+    width: 90%; /* Ancho del ítem de la tarea */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    text-align: center; /* Centra el texto dentro de cada ítem */
+}
+
+/* --- TESTIMONIAL --- */
+.testimonial-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial {
+    display: flex;
+    align-items: center; /* Centra verticalmente el avatar y el texto */
+    gap: 20px; /* Espacio entre el avatar y el texto */
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover;
+}
+
+.testimonial-text p {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-text cite {
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- SECCIÓN DE PRECIOS --- */
+.pricing-section {
+    padding: 60px 20px;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea en pantallas pequeñas */
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 30px;
+    flex-basis: 300px; /* Ancho base de cada tarjeta */
+    flex-grow: 1; /* Permite que crezcan si hay espacio */
+    max-width: 340px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Estilo para la tarjeta destacada */
+.pricing-card.featured {
+    border: 2px solid #3498db;
+    transform: scale(1.05); /* La hace un poco más grande */
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #777;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn-price {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-price:hover {
+    background-color: #2980b9;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Distribuye las columnas equitativamente */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1; /* Hace que cada columna ocupe el mismo espacio */
+    min-width: 200px; /* Ancho mínimo para evitar que se compriman demasiado */
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-column p, .footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column a {
+    color: #bdc3c7;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #34495e;
+}
