@@ -8,146 +8,164 @@
 
 </head>
 <body>
-<nav class="nav">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tarjetas</a></li>
-            <li><a href="#">Gradientes</a></li>
-        </ul>
-    </nav>
 
-<div class="contenedor-tarjetas"> 
-    <div class="tarjeta">
-                <img src="tasa sena 3.png" 
-                     alt="Tasa Sena 3" 
-                     class="imagen-tarjeta">
-                <div class="contenido-tarjeta">
-                    <h3 class="titulo-tarjeta titulo-tasa-sena-3">Tasa Sena 3</h3>
-                    <p class="descripcion-tarjeta">Descripción de la Tasa Sena 3.</p>
-                    <button class="boton-tarjeta">Ver más</button>
-                </div>
-            </div>
-</div>
-<div class="galeria-contenedor">
-    <h2 class="galeria-titulo">Nuestra Cafetería</h2>
-    <div class="galeria-imagenes">
-        <img src="Galaria 1.png" alt="Imagen de cafetería 1" class="galeria-imagen">
-        <img src="Galaria 2.png" alt="Imagen de cafetería 2" class="galeria-imagen">
-        <img src="Galeria 3.png" alt="Imagen de cafetería 3" class="galeria-imagen">
-        <img src="Galeria 4.png" alt="Imagen de cafetería 4" class="galeria-imagen">
-        <img src="Galeria 5.png" alt="Imagen de cafetería 5" class="galeria-imagen">
-        <img src="Galeria 6.png" alt="Imagen de cafetería 6" class="galeria-imagen">
-    </div>
-</div>
- <!-- Sección del Formulario -->
-        <section class="form-container">
-            <h2>Formulario de Contacto</h2>
-            <form action="#">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Enviar</button>
-            </form>
-        </section>
-
-        <!-- Sección de Lista de Tareas -->
-        <section class="task-list-container">
-            <h2>Lista de Tareas</h2>
-            <ul class="task-list">
-                <li>Comprar leche</li>
-                <li>Pasear al perro</li>
-                <li>Hacer ejercicio</li>
-                <li>Leer un libro</li>
+<div class="page-container">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>
-        </section>
+        </nav>
+    </div>
 
-        <!-- Sección de Testimonial -->
-        <section class="testimonial-container">
-            <div class="testimonial">
-                <img src="Sena.png" alt="Avatar" class="testimonial-avatar">
-                <div class="testimonial-text">
-                    <p>"Este es un testimonio increíble de un cliente satisfecho. El servicio fue excepcional y superó todas mis expectativas."</p>
-                    <cite>– Nombre del Cliente</cite>
-                </div>
-            </div>
-        </section>
+    <main class="main-content">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tarjetas</a></li>
+                <li><a href="#">Gradientes</a></li>
+            </ul>
+        </nav>
 
-        <!-- Sección de Precios -->
-        <section class="pricing-section">
-            <h2 class="section-title">Nuestros Planes</h2>
-            <div class="pricing-container">
-                <!-- Tarjeta de Precios 1 -->
-                <div class="pricing-card">
-                    <h3>Básico</h3>
-                    <div class="price">$10<span>/mes</span></div>
-                    <ul>
-                        <li>Característica A</li>
-                        <li>Característica B</li>
-                        <li>Característica C</li>
-                    </ul>
-                    <a href="#" class="btn-price">Seleccionar</a>
-                </div>
-                <!-- Tarjeta de Precios 2 (Destacada) -->
-                <div class="pricing-card featured">
-                    <h3>Profesional</h3>
-                    <div class="price">$25<span>/mes</span></div>
-                    <ul>
-                        <li>Todo en Básico</li>
-                        <li>Característica D</li>
-                        <li>Característica E</li>
-                    </ul>
-                    <a href="#" class="btn-price">Seleccionar</a>
-                </div>
-                <!-- Tarjeta de Precios 3 -->
-                <div class="pricing-card">
-                    <h3>Empresarial</h3>
-                    <div class="price">$50<span>/mes</span></div>
-                    <ul>
-                        <li>Todo en Profesional</li>
-                        <li>Característica F</li>
-                        <li>Soporte 24/7</li>
-                    </ul>
-                    <a href="#" class="btn-price">Seleccionar</a>
-                </div>
+        <div class="contenedor-tarjetas"> 
+            <div class="tarjeta">
+                        <img src="tasa sena 3.png" 
+                             alt="Tasa Sena 3" 
+                             class="imagen-tarjeta">
+                        <div class="contenido-tarjeta">
+                            <h3 class="titulo-tarjeta titulo-tasa-sena-3">Tasa Sena 3</h3>
+                            <p class="descripcion-tarjeta">Descripción de la Tasa Sena 3.</p>
+                            <button class="boton-tarjeta">Ver más</button>
+                        </div>
+                    </div>
+        </div>
+        <div class="galeria-contenedor">
+            <h2 class="galeria-titulo">Nuestra Cafetería</h2>
+            <div class="galeria-imagenes">
+                <img src="Galaria 1.png" alt="Imagen de cafetería 1" class="galeria-imagen">
+                <img src="Galaria 2.png" alt="Imagen de cafetería 2" class="galeria-imagen">
+                <img src="Galaria 3.png" alt="Imagen de cafetería 3" class="galeria-imagen">
+                <img src="Galaria 4.png" alt="Imagen de cafetería 4" class="galeria-imagen">
+                <img src="Galaria 5.png" alt="Imagen de cafetería 5" class="galeria-imagen">
+                <img src="Galaria 6.png" alt="Imagen de cafetería 6" class="galeria-imagen">
             </div>
-        </section>
+        </div>
+         <!-- Sección del Formulario -->
+                <section class="form-container">
+                    <h2>Formulario de Contacto</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar</button>
+                    </form>
+                </section>
 
-        <footer class="site-footer">
-            <div class="footer-container">
-                <div class="footer-column">
-                    <h4>Sobre Nosotros</h4>
-                    <p>Una breve descripción sobre la empresa o el sitio web.</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Tarjetas</a></li>
-                        <li><a href="#">Contacto</a></li>
+                <!-- Sección de Lista de Tareas -->
+                <section class="task-list-container">
+                    <h2>Lista de Tareas</h2>
+                    <ul class="task-list">
+                        <li>Comprar leche</li>
+                        <li>Pasear al perro</li>
+                        <li>Hacer ejercicio</li>
+                        <li>Leer un libro</li>
                     </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Redes Sociales</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Tu Nombre/Empresa. Todos los derechos reservados.</p>
-            </div>
-        </footer>
+                </section>
+
+                <!-- Sección de Testimonial -->
+                <section class="testimonial-container">
+                    <div class="testimonial">
+                        <img src="Sena.png" alt="Avatar" class="testimonial-avatar">
+                        <div class="testimonial-text">
+                            <p>"Este es un testimonio increíble de un cliente satisfecho. El servicio fue excepcional y superó todas mis expectativas."</p>
+                            <cite> Andres Salamanca, Cliente</cite>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Precios -->
+                <section class="pricing-section">
+                    <h2 class="section-title">Nuestros Planes</h2>
+                    <div class="pricing-container">
+                        <!-- Tarjeta de Precios 1 -->
+                        <div class="pricing-card">
+                            <h3>Básico</h3>
+                            <div class="price">$10<span>/mes</span></div>
+                            <ul>
+                                <li>Característica A</li>
+                                <li>Característica B</li>
+                                <li>Característica C</li>
+                            </ul>
+                            <a href="#" class="btn-price">Seleccionar</a>
+                        </div>
+                        <!-- Tarjeta de Precios 2 (Destacada) -->
+                        <div class="pricing-card featured">
+                            <h3>Profesional</h3>
+                            <div class="price">$25<span>/mes</span></div>
+                            <ul>
+                                <li>Todo en Básico</li>
+                                <li>Característica D</li>
+                                <li>Característica E</li>
+                            </ul>
+                            <a href="#" class="btn-price">Seleccionar</a>
+                        </div>
+                        <!-- Tarjeta de Precios 3 -->
+                        <div class="pricing-card">
+                            <h3>Empresarial</h3>
+                            <div class="price">$50<span>/mes</span></div>
+                            <ul>
+                                <li>Todo en Profesional</li>
+                                <li>Característica F</li>
+                                <li>Soporte 24/7</li>
+                            </ul>
+                            <a href="#" class="btn-price">Seleccionar</a>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="site-footer">
+                    <div class="footer-container">
+                        <div class="footer-column">
+                            <h4>Sobre Nosotros</h4>
+                            <p>Una breve descripción sobre la empresa o el sitio web.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Enlaces Rápidos</h4>
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Tarjetas</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Redes Sociales</h4>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; Cafe sena.</p>
+                    </div>
+                </footer>
+    </main>
+</div>
 
 </body>
 </html>

@@ -218,7 +218,7 @@
     max-width: 600px;
     margin: 40px auto; /* Centra el contenedor en la página */
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: #2de6f3;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -413,4 +413,38 @@
     padding: 20px;
     margin-top: 30px;
     border-top: 1px solid #34495e;
+}
+
+/* --- SIDEBAR --- */
+
+.sidebar {
+    width: 200px; /* Ancho fijo del sidebar */
+    background-color: #333; /* Fondo oscuro simple */
+    height: 100%; /* Ocupa toda la altura */
+    position: fixed; /* Lo fija en la pantalla */
+    top: 0;
+    left: 0;
+    padding-top: 20px; /* Espacio arriba */
+}
+
+.sidebar-nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: block; /* Hace que el enlace ocupe todo el ancho */
+    padding: 12px 20px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.sidebar-nav a:hover {
+    background-color: #555; /* Cambia el fondo al pasar el ratón */
+}
+
+.main-content {
+    margin-left: 200px; /* Empuja el contenido principal a la derecha */
+    padding: 20px; /* Espaciado interno para el contenido */
 }
