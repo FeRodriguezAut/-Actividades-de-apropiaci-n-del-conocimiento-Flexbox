@@ -21,6 +21,8 @@
     margin: 0; 
 }
 
+
+
 .nav li {
     display: inline-block;
     margin: 0 10px;
@@ -79,7 +81,7 @@
 /* Estilos de la imagen */
 .imagen-tarjeta {
     width: 100%;
-    height: 180px; /* Altura fija para uniformidad */
+    height: 290px; /* Altura fija para uniformidad */
     object-fit: contain; /* Recorta la imagen para que encaje sin deformarse */
     transition: transform 0.3s ease;
 }
@@ -147,9 +149,9 @@
 }
 
 .galeria-imagen {
-    flex: 1 1 300px; /* Clave para el ajuste: Crece y se encoge desde una base de 300px */
+    flex: 0 1 300px; /* Clave para el ajuste: Crece y se encoge desde una base de 300px */
     max-width: 100%; /* Previene que la imagen se desborde */
-    height: 220px;
+    height: 360px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
