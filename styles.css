@@ -1,10 +1,11 @@
+/* configuracion general */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/*navegacion*/
 .nav {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 0;
@@ -14,7 +15,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
-
+/*listas*/
 .ul {
     list-style: none;
     padding: 0;
@@ -25,6 +26,7 @@
     display: inline-block;
     margin: 0 10px;
 }
+
 .nav a {
     color: #ffffff; /* Color del texto */
     text-decoration: none; /* Quita el subrayado */
@@ -35,7 +37,7 @@
     transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
     display: inline-block; /* Asegura que el padding y otras propiedades de bloque funcionen */
 }
-
+/*efectos*/
     .nav a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     transform: translateY(-2px); /* Eleva ligeramente el botón */
@@ -56,7 +58,7 @@
     align-items: center;
     min-height: 80vh;
 }
-
+/*tarjetas*/
 .tarjeta {
     background-color: #f4f4f4c5;
     color: #333333;
@@ -132,7 +134,7 @@
     margin: 50px auto;
     text-align: center;
 }
-
+/*galeria titulo*/
 .galeria-titulo {
     font-size: 2rem;
     margin-bottom: 30px;
@@ -195,7 +197,7 @@
     border-radius: 5px;
     box-sizing: border-box; /* Importante para que el padding no altere el ancho */
 }
-
+/*boton*/
 .submit-btn {
     display: block;
     width: 100%;
@@ -326,7 +328,7 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
-
+/*precios*/
 .pricing-card .price {
     font-size: 3rem;
     font-weight: bold;
@@ -350,7 +352,7 @@
     margin-bottom: 15px;
     color: #555;
 }
-
+/*bonton*/
 .btn-price {
     display: inline-block;
     padding: 12px 30px;
